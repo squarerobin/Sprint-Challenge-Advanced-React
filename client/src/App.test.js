@@ -10,6 +10,13 @@ import NavBar from "./components/Navbar"
 test("renders App without crashing", () => {
   render(<App />);
 });
+
+test("renders Players without crashing", () => {
+  render(<Players />);
+});
+
+
+
   
 it('renders "name" text', () => {
   const { queryByText } = render(
