@@ -54,8 +54,10 @@ class Players extends React.Component {
                     this.state.players.map(player => {
                         return (
 
+                           // I researched the best way (best practice) for using key prop: https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js
+                           // We are supposed to use a unique id already present in the API if possible so:
 
-                            <div key={Date.now() + Math.random()} className="players-container">
+                            <div key={player.id} className="players-container">
                                 <p>Name: {player.name}</p>
                                 <p>Country: {player.country}</p>
                                 <p>Searches: {player.searches}</p>
