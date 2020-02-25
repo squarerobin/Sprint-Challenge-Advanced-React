@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -90,7 +91,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,21 +105,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -127,16 +123,15 @@ q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* General Styles */
+
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -172,6 +167,7 @@ img {
   width: 100%;
 }
 
+
 .dark-mode__toggle {
   background: papayawhip;
   border-radius: 50px;
@@ -187,7 +183,6 @@ img {
   height: 18px;
   left: 0;
   position: absolute;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   width: 20px;
 }
@@ -197,12 +192,11 @@ img {
 }
 
 .dark-mode {
-  color: #fff;
-  background-color: #313843;
+    color: #fff;
+    background-color: #313843;
+  
+    .navbar {
+      background-color: #1F2022;
+      border: none;
+    }
 }
-
-.dark-mode .navbar {
-  background-color: #1F2022;
-  border: none;
-}
-/*# sourceMappingURL=index.css.map */
