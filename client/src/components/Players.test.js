@@ -8,5 +8,5 @@ import Navbar from "./Navbar"
 
 
 test("renders Navbar without crashing", () => {
-    render(<Navbar />);
+    render(<Navbar key={new Date().now()} />);
   });

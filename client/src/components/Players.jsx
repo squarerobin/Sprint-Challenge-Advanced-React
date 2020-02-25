@@ -55,7 +55,7 @@ class Players extends React.Component {
                         return (
 
 
-                            <div className="players-container">
+                            <div key={Date.now() + Math.random()} className="players-container">
                                 <p>Name: {player.name}</p>
                                 <p>Country: {player.country}</p>
                                 <p>Searches: {player.searches}</p>
